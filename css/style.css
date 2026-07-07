@@ -3,19 +3,50 @@ body{
   font-size: 100%;
   background-color: lightgray;
 }
-li{
+/*li{
   display: inline-block;
     width: 27%;
     text-align: center;
     background-color: yellow;
     line-height: 50px;
-}
+}*/
 header{
   text-align: center;
   background-color: lightcyan;
 }
 nav{
   background-color: beige;
+}
+nav li{
+  display: inline-block;
+  width: 27%;
+}
+nav img{
+  width: 10%;
+}
+.grid>main{
+  display: contents;
+}
+.grid main >div{
+  display: contents;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.grid img{
+  width: 100%;
+}
+.flex{
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.flex img{
+  width: auto;
+  max-width: 150px;
 }
 main{
   background-color: aliceblue;
